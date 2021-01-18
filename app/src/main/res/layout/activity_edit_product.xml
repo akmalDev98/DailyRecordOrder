@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/add_bg"
+    tools:context=".EditProductActivity">
+
+    <View
+        android:layout_width="350dp"
+        android:layout_height="600dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/sample_rounded_box"/>
+
+    <ImageButton
+        android:id="@+id/productImageEdit"
+        android:layout_width="201dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/productIdEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="ProductID"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/productImageEdit"
+        app:layout_constraintStart_toStartOf="@id/productImageEdit"
+        app:layout_constraintEnd_toEndOf="@+id/productImageEdit" />
+
+    <EditText
+        android:id="@+id/productNameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/productImageEdit"
+        app:layout_constraintTop_toBottomOf="@+id/productImageEdit" />
+
+    <EditText
+        android:id="@+id/productPriceEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/productNameEdit"
+        app:layout_constraintTop_toBottomOf="@+id/productNameEdit" />
+
+    <EditText
+        android:id="@+id/productCostEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Cost"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/productPriceEdit"
+        app:layout_constraintTop_toBottomOf="@+id/productPriceEdit" />
+
+    <EditText
+        android:id="@+id/productTypeEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Type"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/productCostEdit"
+        app:layout_constraintTop_toBottomOf="@+id/productCostEdit" />
+
+    <Button
+        android:id="@+id/saveEditButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="32dp"
+        android:text="Save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productTypeEdit" />
+
+    <Button
+        android:id="@+id/deleteProductButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:text="Delete"
+        app:layout_constraintStart_toEndOf="@+id/saveEditButton"
+        app:layout_constraintTop_toBottomOf="@+id/productTypeEdit" />
+</androidx.constraintlayout.widget.ConstraintLayout>

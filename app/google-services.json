@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1003477781536",
+    "firebase_url": "https://eorderapp-c22a0-default-rtdb.firebaseio.com",
+    "project_id": "eorderapp-c22a0",
+    "storage_bucket": "eorderapp-c22a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003477781536:android:7d82fa5ef7129e2816c045",
+        "android_client_info": {
+          "package_name": "com.example.e_orderapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1003477781536-r637h2pv2r262ikgr5b0ttsfv8k09f0f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.e_orderapp",
+            "certificate_hash": "065b7f85f32679fd3e0eb0439fa64183531b7421"
+          }
+        },
+        {
+          "client_id": "1003477781536-3qnh9gttcpsvhhh1415j1tootp04rkqb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLgaXV85M147GCqELQHH3AZ0aD0im69bA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1003477781536-3qnh9gttcpsvhhh1415j1tootp04rkqb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

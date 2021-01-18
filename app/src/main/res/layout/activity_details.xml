@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".DetailsActivity"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/da_container">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/details_box_bg"/>
+
+    <View
+        android:id="@+id/details_container"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:background="@drawable/details_box_bg1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57"
+        android:elevation="20dp"/>
+
+
+    <TextView
+        android:id="@+id/detail_order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/amaranth"
+        android:text="DETAILS"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/prod_info_title_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--product's info-->
+        <TextView
+            android:id="@+id/prod_info_title_tv"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/sample_rounded_box"
+            android:backgroundTint="@color/details_bg1"
+            android:elevation="25dp"
+            android:text="10 DEC 2020"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/detail_order_prod_name"
+            app:layout_constraintEnd_toEndOf="@id/details_container"
+            app:layout_constraintStart_toStartOf="@id/details_container"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.82" />
+
+    <TextView
+        android:id="@+id/detail_order_prod_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:paddingStart="20dp"
+        android:text="Cake Pandan Gula Melaka"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:elevation="25dp"
+        app:layout_constraintEnd_toEndOf="@id/details_container"
+        app:layout_constraintStart_toStartOf="@id/details_container"
+        app:layout_constraintTop_toTopOf="@+id/details_container" />
+
+    <TextView
+        android:id="@+id/detail_order_prod_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/detail_order_prod_name"
+        app:layout_constraintEnd_toEndOf="@id/details_container"
+        app:layout_constraintTop_toBottomOf="@+id/detail_order_prod_name"
+        android:layout_marginTop="16dp"
+        android:paddingStart="20dp"
+        android:text="7 x 7 inch"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:elevation="25dp"/>
+
+    <TextView
+        android:id="@+id/detail_order_quantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/detail_order_prod_type"
+        app:layout_constraintTop_toBottomOf="@+id/detail_order_prod_type"
+        app:layout_constraintEnd_toEndOf="@id/details_container"
+        android:layout_marginTop="16dp"
+        android:paddingStart="20dp"
+        android:text="1"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:elevation="25dp"/>
+
+    <TextView
+        android:id="@+id/detail_order_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/detail_order_quantity"
+        app:layout_constraintTop_toBottomOf="@+id/detail_order_quantity"
+        app:layout_constraintEnd_toEndOf="@id/details_container"
+        android:layout_marginTop="16dp"
+        android:paddingStart="20dp"
+        android:text="RM55"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:elevation="25dp"/>
+
+
+    <TextView
+        android:id="@+id/detail_order_cust_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/detail_order_price"
+        app:layout_constraintTop_toBottomOf="@+id/detail_order_price"
+        app:layout_constraintEnd_toEndOf="@id/details_container"
+        android:layout_marginTop="16dp"
+        android:paddingStart="20dp"
+        android:text="Muhammad Akmal"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:elevation="25dp"/>
+
+    <TextView
+        android:id="@+id/detail_order_phone_no"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/detail_order_cust_name"
+        app:layout_constraintTop_toBottomOf="@+id/detail_order_cust_name"
+        app:layout_constraintEnd_toEndOf="@id/details_container"
+        android:layout_marginTop="16dp"
+        android:paddingStart="20dp"
+        android:text="019-2581545"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:elevation="25dp"/>
+
+    <TextView
+        android:id="@+id/detail_order_total"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/detail_order_phone_no"
+        app:layout_constraintTop_toBottomOf="@+id/detail_order_phone_no"
+        app:layout_constraintEnd_toEndOf="@id/details_container"
+        android:layout_marginTop="32dp"
+        android:paddingStart="20dp"
+        android:text="Total : RM55"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:elevation="25dp"/>
+
+    <Button
+        android:id="@+id/detail_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="16dp"
+        android:text="Delete"
+        android:background="@drawable/custom_button_blue"
+        android:backgroundTint="@color/red"
+        android:elevation="20dp"/>
+    <Button
+        android:id="@+id/detail_edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/detail_delete_button"
+        app:layout_constraintBottom_toBottomOf="@id/detail_delete_button"
+        android:layout_marginEnd="10dp"
+        android:text="Edit"
+        android:background="@drawable/custom_button_blue"
+        android:elevation="20dp"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
